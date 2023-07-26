@@ -1,27 +1,42 @@
 'use client'
 
-import './globals.css'
 
-import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import Link from 'next/link';
+import './globals.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faTwitter,faYoutube,faTwitch} from '@fortawesome/free-brands-svg-icons'
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { Inter } from 'next/font/google';
 import React from 'react';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { Layout, Menu, ConfigProvider,Image,Typography,Space} from 'antd';
-import SizeContext from 'antd/es/avatar/SizeContext';
+import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
+import { useRouter } from 'next/navigation';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { Title , Text } = Typography;
 
-const inter = Inter({ subsets: ['latin'] })
 
+config.autoAddCss = false; 
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  const  router = useRouter();
+  const handleMenuClick = ({key}) => {
+    
+    if (key){
+      router.push('/'+key);
+    }
+  }
+  
+  
   return (
     <html lang="en">
-      <body>
+      <body style={{height:100}}>
       <ConfigProvider
     theme={{
       token: {
@@ -29,6 +44,7 @@ export default function RootLayout({
       },
       components: {
         Menu:{
+          "colorPrimary": "#ffaebc",
           itemSelectedBg:"#F5F5F5",
           itemSelectedColor:"#FFAEBC",
       },
@@ -37,7 +53,9 @@ export default function RootLayout({
     }}
   >
 
-      <Layout>
+      <Layout style={{
+        backgroundColor:'white'
+      }}>
       
       <Sider
         breakpoint="lg"
@@ -48,18 +66,23 @@ export default function RootLayout({
         onCollapse={(collapsed, type) => {
           console.log(collapsed, type);
         }}
-        style={{backgroundColor:'white',position:'fixed',minHeight:'100vh'}}
+        style={{
+          top:0,
+          left:0,
+          position:'sticky',
+          height:100
+        }}
+
       >
         <div className="demo-logo-vertical" />
         
-        <Image width={200} src= "/images/site/avatar.png" 
+        <AntdImage width={200} src= "/images/site/avatar.png" 
         alt='Matcha Neko, illustrated by Litan Bellveil @Aegis'/>
 
         <Title level={3} style={{textAlign:"center",color:"#FFAEBC"}}> Matcha Neko </Title>
-        <Text type="secondary" style={{textAlign:"center",marginBottom:'12px',display:'block'}}>Elemental / Typhon</Text>
-
-
+        
         <Menu
+          onClick= {handleMenuClick}
           theme="light"
           mode="inline"
           defaultSelectedKeys={['about']}
@@ -69,25 +92,44 @@ export default function RootLayout({
             {label:'Gposes',key:'gposes'},
             {label:'Stories',key:'stories'},
           ]}
-          style={{backgroundColor:'transparent',itemActiveBg:'#F5F5F5'}}
+          style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
         />
 
-        <Space>
-          
+     
+
+        <Text type="secondary" style={{marginTop:'50%',marginBottom:'12px',display: "flex",justifyContent: 'center'}}>Elemental/Typhon</Text>
+        <Space style={{textAlign:"center",display: "flex",justifyContent: 'center'}}>
+          <Link href="https://www.youtube.com/channel/UCzt5utbnOmDZzqKxp_Utg5A">
+            <FontAwesomeIcon icon={faYoutube} style={{color: "#ffaebc",}} />
+          </Link>
+          <Link href="https://www.twitch.tv/matchanekoffxiv">
+            <FontAwesomeIcon icon={faTwitch} style={{color: "#ffaebc",}} />
+          </Link>
+          <Link href="https://twitter.com/MatchaNekoFFXIV">
+            <FontAwesomeIcon icon={faTwitter} style={{color: "#ffaebc",}} />
+          </Link>
+          <Link href="https://www.fflogs.com/character/id/17514901">
+            <Image src='/images/site/fflog_pink.png' alt='icon for fflogs' width='20' height='20' />
+          </Link>
         </Space>
-
-
+       
+       
+       
       </Sider>
-
+      
+      
 
       <Layout>
         <Header style={{ padding: 0, backgroundColor:'#F5F5F5'}} />
-        <Content style={{ margin: '24px 16px 0',minHeight: '100vh'}}>
+        <Content style={{ 
+        margin: '24px 16px 0',
+        overflow: "initial"}}>
           {children}
         </Content>
+        
         <Footer style={{ textAlign: 'center' }}>Matcha Neko @ Typhon</Footer>
       </Layout>
-    </Layout>
+      </Layout>
     </ConfigProvider>
 
         

@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faTwitter,faYoutube,faTwitch} from '@fortawesome/free-brands-svg-icons'
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { Inter } from 'next/font/google';
 import React from 'react';
 import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
 import { useRouter } from 'next/navigation';

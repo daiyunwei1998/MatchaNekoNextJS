@@ -11,6 +11,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import React from 'react';
 import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
 import { useRouter } from 'next/navigation';
+import MusicPlayer from './components/musicPlayer'
 
 const { Header, Content, Footer, Sider } = Layout;
 const { Title , Text } = Typography;
@@ -125,6 +126,7 @@ export default function RootLayout({
         overflow: "initial"}}>
           {children}
         </Content>
+        <MusicPlayer></MusicPlayer>
         
         <Footer style={{ textAlign: 'center' }}>Matcha Neko @ Typhon</Footer>
       </Layout>

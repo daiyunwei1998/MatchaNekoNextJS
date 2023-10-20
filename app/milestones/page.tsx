@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { Timeline,Card } from 'antd';
-import Image from 'next/image';
 import FFIcon from '../components/FFIcon';
 import { Anchor, Row, Col } from 'antd';
+import { Image } from 'antd';
 
 const { Meta } = Card;
 const titleStyle = {

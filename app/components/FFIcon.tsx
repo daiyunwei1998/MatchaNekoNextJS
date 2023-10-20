@@ -46,12 +46,16 @@ const FFIcon = ({ type }) => {
     BLM:'/images/fficon/BlackMage.png',
     BSM:'/images/fficon/Blacksmith.png',
     BLU:'/images/fficon/BlueMage.png',
+    DD:'/images/fficon/DeepDungeon.png',
+    HighEndDuty:'/images/fficon/HighEndDuty.png',
+    Sprout:'/images/fficon/Sprout.png',
+    Returner:'/images/fficon/Returner.png',
   };
 
   // Check if the provided "type" exists in the mapping
   if (type in imageMap) {
     const imageUrl = imageMap[type];
-    return <img src={imageUrl} alt={type} style={{ height: '1em' }} />;
+    return <img src={imageUrl} alt={type} style={{ height: '1.5em' ,verticalAlign: 'middle'}} />;
   } else {
     return <div>ICON not found for type: {type}</div>;
   }

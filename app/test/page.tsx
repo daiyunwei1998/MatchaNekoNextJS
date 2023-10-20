@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import FFIcon from '../components/FFIcon';
 
 const contentStyle: React.CSSProperties = {
   height: '160px',
@@ -10,6 +11,7 @@ const contentStyle: React.CSSProperties = {
 };
 export default function Page() {
   return (
+    <div>
     <Carousel autoplay>
     <div>
       <h3 style={contentStyle}>1</h3>
@@ -24,5 +26,7 @@ export default function Page() {
       <h3 style={contentStyle}>4</h3>
     </div>
   </Carousel>
+   <FFIcon type="PLD" />
+   </div>
   )
 }

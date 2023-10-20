@@ -13,6 +13,7 @@ export default function MusicPlayer() {
       } else {
         console.log(audioRef.current)
         audioRef.current.play();
+        audioRef.current.volume = 0.1;
       }
       setIsPlaying(!isPlaying);
     };

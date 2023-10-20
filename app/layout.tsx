@@ -54,7 +54,8 @@ export default function RootLayout({
   >
 
       <Layout style={{
-        backgroundColor:'white'
+        backgroundColor:'white',
+        boxShadow:'5px 0 5px rgba(0, 0, 0, 0.5)'
       }}>
       
       <Sider
@@ -70,7 +71,11 @@ export default function RootLayout({
           top:0,
           left:0,
           position:'sticky',
-          height:100
+          minHeight: '100vh',
+          boxShadow: '2px 0 5px rgba(0, 0, 0, 0.3)',
+          zIndex: 1,
+          height:100,
+          backgroundColor:'white',
         }}
 
       >
@@ -120,15 +125,16 @@ export default function RootLayout({
       
 
       <Layout>
-        <Header style={{ padding: 0, backgroundColor:'#F5F5F5'}} />
+        <Header style={{ padding: 0, backgroundColor:'white'}} />
         <Content style={{ 
-        margin: '24px 16px 0',
-        overflow: "initial"}}>
+        padding: '24px 16px 0',
+        overflow: "initial",
+        backgroundColor:'white'}}>
           {children}
         </Content>
         <MusicPlayer></MusicPlayer>
         
-        <Footer style={{ textAlign: 'center' }}>Matcha Neko @ Typhon</Footer>
+        <Footer style={{ textAlign: 'center', backgroundColor:'white' }}>Matcha Neko @ Typhon</Footer>
       </Layout>
       </Layout>
     </ConfigProvider>

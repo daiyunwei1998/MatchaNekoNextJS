@@ -6,7 +6,6 @@ import Image from 'next/image';
 import FFIcon from '../components/FFIcon';
 import { Anchor, Row, Col } from 'antd';
 
-const { Link } = Anchor;
 const { Meta } = Card;
 const titleStyle = {
   color: '#ffaebc', // Change the color to your desired color

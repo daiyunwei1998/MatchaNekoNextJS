@@ -158,7 +158,7 @@ export default function Milestones() {
           />
         }
       >
-        <Meta title={<span style={titleStyle}>The Weapon's Refrain (Ultimate)</span>} description="2022/8/14 Patch 6.1"  />
+        <Meta title={<span style={titleStyle}>The Weapon&apos;s Refrain (Ultimate)</span>} description="2022/8/14 Patch 6.1"  />
         <p><FFIcon type="WAR"/> Wind Noname</p>
         <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
         <p><FFIcon type="WHM"/> Litan Bellveil</p>
@@ -235,7 +235,7 @@ export default function Milestones() {
           />
         }
       >
-        <Meta title={<span style={titleStyle}>Dragonsong's Reprise (Ultimate)</span>} description="2023/1/10"  />
+        <Meta title={<span style={titleStyle}>Dragonsong&apos;s Reprise (Ultimate)</span>} description="2023/1/10"  />
         <p><FFIcon type="DRK"/> Yoyo Adsl</p>
         <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
         <p><FFIcon type="WHM"/> Akari Kurosawa</p>
@@ -318,7 +318,7 @@ export default function Milestones() {
     {
         key: 'the-weapons-refrain',
         href: '#the-weapons-refrain',
-        title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> The Weapon's Refrain (Ultimate)</p>,
+        title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> The Weapon&apos;s Refrain (Ultimate)</p>,
     },
     {
         key: 'the-necromancer',
@@ -333,7 +333,7 @@ export default function Milestones() {
     {
         key: 'dragonsongs-reprise',
         href: '#dragonsongs-reprise',
-        title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> Dragonsong's Reprise (Ultimate)</p>,
+        title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> Dragonsong&apos;s Reprise (Ultimate)</p>,
     },
     {
         key: 'eureka-orthos-solo',

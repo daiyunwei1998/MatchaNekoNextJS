@@ -38,7 +38,8 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>New adventurer</span>} description="2020" />
-        <p>抹茶猫@沃仙曦染</p>
+        <p>抹茶猫@沃仙曦染<br></br>Portrait by Liasa@神意之地</p>
+
       </Card>,
       },
       {
@@ -57,14 +58,16 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>The Epic of Alexander (Ultimate)</span>} description="2021/12/20 Patch 5.5"  />
-        <p><FFIcon type="DRK"/> 穂積陳重</p>
-        <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>抹茶猫</strong></p>
-        <p><FFIcon type="WHM"/> Leko</p>
-        <p><FFIcon type="AST"/> 伊弗列姆</p>
-        <p><FFIcon type="SAM"/> 旋律·火花</p>
-        <p><FFIcon type="RDM"/> 绿豆冰沙小花</p>
-        <p><FFIcon type="MCH"/> 麦田里的囚人</p>
-        <p><FFIcon type="SMN"/> 克莉娜</p>
+        <p>
+        <FFIcon type="DRK"/> 穂積陳重<br/>
+        <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>抹茶猫</strong><br/>
+        <FFIcon type="WHM"/> Leko<br/>
+        <FFIcon type="AST"/> 伊弗列姆<br/>
+        <FFIcon type="SAM"/> 旋律·火花<br/>
+        <FFIcon type="RDM"/> 绿豆冰沙小花<br/>
+        <FFIcon type="MCH"/> 麦田里的囚人<br/>
+        <FFIcon type="SMN"/> 克莉娜
+        </p>
         <p>Gpose by 克莉娜</p>
         {<a href="https://www.fflogs.com/character/cn/%E6%B2%83%E4%BB%99%E6%9B%A6%E6%9F%93/%e6%8a%b9%e8%8c%b6%e7%8c%ab?zone=38#zone=32&boss=1050" target="_blank">View FFlogs</a>}
       </Card>,
@@ -103,14 +106,16 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>The Unending Coil of Bahamut (Ultimate)</span>} description="2022/5/22 Patch 6.1"  />
-        <p><FFIcon type="GNB"/> Hot Cappuccino</p>
-        <p><FFIcon type="WAR"/> Asore Producer</p>
-        <p><FFIcon type="AST"/> Kotoha Swallow</p>
-        <p><FFIcon type="SCH"/> Quia Aquette</p>
-        <p><FFIcon type="NIN"/> Khaleesi Moone</p>
-        <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
-        <p><FFIcon type="MCH"/> Onion Gdiva</p>
-        <p><FFIcon type="SMN"/> Hana Kagerou</p>
+        <p>
+        <FFIcon type="GNB"/> Hot Cappuccino<br/>
+        <FFIcon type="WAR"/> Asore Producer<br/>
+        <FFIcon type="AST"/> Kotoha Swallow<br/>
+        <FFIcon type="SCH"/> Quia Aquette<br/>
+        <FFIcon type="NIN"/> Khaleesi Moone<br/>
+        <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+        <FFIcon type="MCH"/> Onion Gdiva<br/>
+        <FFIcon type="SMN"/> Hana Kagerou
+        </p>
         <p>Gpose by Quia Aquette</p>
         {<a href="https://www.fflogs.com/character/id/17514901#zone=43&partition=-2&boss=1060" target="_blank">View FFlogs</a>}
       </Card>,
@@ -130,14 +135,16 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>The Epic of Alexander (Ultimate)</span>} description="2022/7/17 Patch 6.1"  />
-        <p><FFIcon type="WAR"/> Rexia Phese</p>
-        <p><FFIcon type="GNB"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
-        <p><FFIcon type="AST"/> Samuel Sung</p>
-        <p><FFIcon type="SGE"/> Rokuru Kirisame</p>
-        <p><FFIcon type="SAM"/> Isana Tigger</p>
-        <p><FFIcon type="BLM"/> Sekkar Miller</p>
-        <p><FFIcon type="BRD"/> Reno Lowitz</p>
-        <p><FFIcon type="DNC"/> Aira Aone</p>
+        <p>
+        <FFIcon type="WAR"/> Rexia Phese<br/>
+        <FFIcon type="GNB"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+        <FFIcon type="AST"/> Samuel Sung<br/>
+        <FFIcon type="SGE"/> Rokuru Kirisame<br/>
+        <FFIcon type="SAM"/> Isana Tigger<br/>
+        <FFIcon type="BLM"/> Sekkar Miller<br/>
+        <FFIcon type="BRD"/> Reno Lowitz<br/>
+        <FFIcon type="DNC"/> Aira Aone
+        </p>
         <p>Gpose by Quia Aquette</p>
         {<a href="https://www.fflogs.com/character/id/17514901#zone=43&boss=1062&partition=7" target="_blank">View FFlogs</a>}
         <br></br>
@@ -159,14 +166,16 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>The Weapon&apos;s Refrain (Ultimate)</span>} description="2022/8/14 Patch 6.1"  />
-        <p><FFIcon type="WAR"/> Wind Noname</p>
-        <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
-        <p><FFIcon type="WHM"/> Litan Bellveil</p>
-        <p><FFIcon type="SCH"/> Ui Ha</p>
-        <p><FFIcon type="SAM"/> Talon Wakuwaku</p>
-        <p><FFIcon type="NIN"/> Dodo Lee</p>
-        <p><FFIcon type="MCH"/> Explooosive Raaay</p>
-        <p><FFIcon type="SMN"/> Shibusaka Yun</p>
+        <p>
+          <FFIcon type="WAR"/> Wind Noname<br/>
+          <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+          <FFIcon type="WHM"/> Litan Bellveil<br/>
+          <FFIcon type="SCH"/> Ui Ha<br/>
+          <FFIcon type="SAM"/> Talon Wakuwaku<br/>
+          <FFIcon type="NIN"/> Dodo Lee<br/>
+          <FFIcon type="MCH"/> Explooosive Raaay<br/>
+          <FFIcon type="SMN"/> Shibusaka Yun
+        </p>
         <p>Gpose by Litan Bellveil @Aegis</p>
         {<a href="https://www.fflogs.com/character/id/17514901#zone=43&boss=1061" target="_blank">View FFlogs</a>}
         <br></br>
@@ -236,15 +245,17 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>Dragonsong&apos;s Reprise (Ultimate)</span>} description="2023/1/10"  />
-        <p><FFIcon type="DRK"/> Yoyo Adsl</p>
-        <p><FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong></p>
-        <p><FFIcon type="WHM"/> Akari Kurosawa</p>
-        <p><FFIcon type="SGE"/> Akira Rune</p>
-        <p><FFIcon type="SAM"/> Yonah Belzerg</p>
-        <p><FFIcon type="NIN"/> Alainne Ciel</p>
-        <p><FFIcon type="MCH"/> Nirvash Zero</p>
-        <p><FFIcon type="RDM"/> Charlotte Arashiniji</p>
-        Special Thanks <FFIcon type="RDM"/> Canis Ares @ Aegis 
+        <p>
+          <FFIcon type="DRK"/> Yoyo Adsl<br/>
+          <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+          <FFIcon type="WHM"/> Akari Kurosawa<br/>
+          <FFIcon type="SGE"/> Akira Rune<br/>
+          <FFIcon type="SAM"/> Yonah Belzerg<br/>
+          <FFIcon type="NIN"/> Alainne Ciel<br/>
+          <FFIcon type="MCH"/> Nirvash Zero<br/>
+          <FFIcon type="RDM"/> Charlotte Arashiniji<br/>
+          Special Thanks <FFIcon type="RDM"/> Canis Ares @ Aegis
+        </p>
         <p>Gpose by Akira Rune @Aegis</p>
         {<a href="https://www.fflogs.com/character/id/17514901#zone=45&boss=1065" target="_blank">View FFlogs</a>}
         <br></br>

@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {typescript: {
+const nextConfig = {  typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
     // your project has type errors.

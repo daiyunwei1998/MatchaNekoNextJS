@@ -1,6 +1,10 @@
 import React from 'react';
 
-const FFIcon = ({ type }) => {
+interface FFIconProps {
+  type: string;
+}
+
+const FFIcon = ({ type }:{type:string}) => {
   // Define a mapping of "type" values to image URLs
   const imageMap = {
     BTN:'/images/fficon/Botanist.png',

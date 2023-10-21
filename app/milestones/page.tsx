@@ -5,6 +5,7 @@ import { Timeline,Card } from 'antd';
 import FFIcon from '../components/FFIcon';
 import { Anchor, Row, Col } from 'antd';
 import { Image } from 'antd';
+import Script from 'next/script'
 
 const { Meta } = Card;
 const titleStyle = {
@@ -15,7 +16,7 @@ const titleStyle = {
 export default function Milestones() {
   return (
     <div>
-    <script src="https://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v2"></script>
+    <Script src="https://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v2"></Script>
     
     <Row>
         <Col span={18}>
@@ -191,7 +192,7 @@ export default function Milestones() {
         <Meta title={<span style={titleStyle}>The Necromancer</span>} description="2022/9/18"  />
         The Palace of the Dead floor 0-200 solo with machinist.
         <br></br>
-        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/bf25fe273b9/" class="eorzeadb_link">View Achievement</a>
+        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/bf25fe273b9/" target="_blank"  className="eorzeadb_link">View Achievement</a>
         <br></br>
         {<a href="https://www.youtube.com/watch?v=J3idW15l9us&t=6s&ab_channel=MatchaNeko" target="_blank">MCH 170-180</a>}
         <br></br>
@@ -217,7 +218,7 @@ export default function Milestones() {
         <Meta title={<span style={titleStyle}>Lone Hero</span>} description="2022/9/22"  />
         Heaven on high solo with gunbreaker.
         <br></br>
-        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/8e23a1d733e/" class="eorzeadb_link">View Achivement</a>
+        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/8e23a1d733e/" target="_blank" className="eorzeadb_link">View Achivement</a>
       </Card>,
       },
       {
@@ -268,7 +269,7 @@ export default function Milestones() {
       
         Eureka Orthos solo with MCH.
         <br></br>
-        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/32aeb56b47a/" class="eorzeadb_link">View Achievement</a>
+        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/32aeb56b47a/" target="_blank" className="eorzeadb_link">View Achievement</a>
         <br></br>
         {<a href="https://youtu.be/CkDzm3MiuFI" target="_blank">MCH 71-80</a>}
         <br></br>

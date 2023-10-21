@@ -17,7 +17,7 @@ const contentStyle: React.CSSProperties = {
      <div style={{ display: 'flex', alignItems: 'center' }}>
       <img style={{ width: '50%', height: 'auto'}} src="/images/about/cover.png" ></img>
       <div>
-      <h2>抹茶貓/Matcha Neko</h2>
+      <h2 style={{color:'#FFAEBC'}}>抹茶貓/Matcha Neko</h2>
       <p>I've met awesome people like 夜子吃椰子@紅玉海, 伊弗列姆@晨曦王座, Liasa@神意之地. They are my courage and my strength, the real treasure of my quest. This site contains my memory of being Matcha the neko. The story of me and those friends I've met, the story of us - warriors of light. May you ever walk in the light of the crystal.</p>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function stories() {
       <h2 style={{color:'#FFAEBC'}}><Spin />  This section is still WIP. </h2>
       </div>
       
-      <img style={{ width: '40%', height: 'auto'}} src="/images/stories/WIP.png"></img>
+      <img alt = 'Work in progress' style={{ width: '40%', height: 'auto'}} src="/images/stories/WIP.png"></img>
     </div>
   )
 }

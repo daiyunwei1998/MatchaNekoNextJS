@@ -104,16 +104,16 @@ export default function RootLayout({
 
         <Text type="secondary" style={{marginTop:'50%',marginBottom:'12px',display: "flex",justifyContent: 'center'}}>Elemental/Typhon</Text>
         <Space style={{textAlign:"center",display: "flex",justifyContent: 'center'}}>
-          <Link href="https://www.youtube.com/channel/UCzt5utbnOmDZzqKxp_Utg5A">
+          <Link href="https://www.youtube.com/channel/UCzt5utbnOmDZzqKxp_Utg5A" target="_blank">
             <FontAwesomeIcon icon={faYoutube} style={{color: "#ffaebc",}} />
           </Link>
-          <Link href="https://www.twitch.tv/matchanekoffxiv">
+          <Link href="https://www.twitch.tv/matchanekoffxiv" target="_blank">
             <FontAwesomeIcon icon={faTwitch} style={{color: "#ffaebc",}} />
           </Link>
-          <Link href="https://twitter.com/MatchaNekoFFXIV">
+          <Link href="https://twitter.com/MatchaNekoFFXIV" target="_blank">
             <FontAwesomeIcon icon={faTwitter} style={{color: "#ffaebc",}} />
           </Link>
-          <Link href="https://www.fflogs.com/character/id/17514901">
+          <Link href="https://www.fflogs.com/character/id/17514901" target="_blank">
             <Image src='/images/site/fflog_pink.png' alt='icon for fflogs' width='20' height='20' />
           </Link>
         </Space>

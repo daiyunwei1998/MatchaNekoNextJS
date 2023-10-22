@@ -1,0 +1,8 @@
+/* styles.css */
+
+/* Hide the Anchor component on screens with a width less than 768px */
+@media (max-width: 768px) {
+    .anchor {
+      display: none;
+    }
+  }

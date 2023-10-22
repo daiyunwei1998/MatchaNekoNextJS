@@ -7,6 +7,8 @@ import { Anchor, Row, Col } from 'antd';
 import { Image } from 'antd';
 import Script from 'next/script'
 
+import milestonesStyles from './milestonesStyles.module.css'
+
 const { Meta } = Card;
 const titleStyle = {
   color: '#ffaebc', // Change the color to your desired color
@@ -38,7 +40,8 @@ export default function Milestones() {
         }
       >
         <Meta title={<span style={titleStyle}>New adventurer</span>} description="2020" />
-        <p>抹茶猫@沃仙曦染<br></br>Portrait by Liasa@神意之地</p>
+        <p>抹茶猫@沃仙曦染</p>
+        <p>Portrait by Liasa@神意之地</p>
 
       </Card>,
       },
@@ -47,13 +50,13 @@ export default function Milestones() {
         <Card
         id="the-epic-of-alexander"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="The Epic of Alexander (Ultimate)" 
             src="/images/milestones/TEA1.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -76,13 +79,13 @@ export default function Milestones() {
         children:  <Card
         id="to-elemental"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="Matcha Neko in elemental server" 
             src="/images/milestones/WoL.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -95,13 +98,13 @@ export default function Milestones() {
         children: <Card
         id="the-unending-coil"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="The Unending Coil of Bahamut (Ultimate)" 
             src="/images/milestones/UCoB.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -124,13 +127,13 @@ export default function Milestones() {
         children: <Card
         id="second-run-of-tea"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="My second run of TEA" 
             src="/images/milestones/TEA2.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -155,13 +158,13 @@ export default function Milestones() {
         children: <Card
         id="the-weapons-refrain"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="The Weapon's Refrain (Ultimate)" 
             src="/images/milestones/UWU.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -188,13 +191,13 @@ export default function Milestones() {
         children: <Card
         id="the-necromancer"
         hoverable
-        style={{ width: 500 }}
+        style={{ width: 256 }}
         cover={
           <Image 
             alt="The Necromancer" 
             src="/images/milestones/necromancer_score.png" 
-            width={500}
-            height={500}
+            width={256}
+            height={256}
           />
         }
       >
@@ -214,13 +217,13 @@ export default function Milestones() {
         children: <Card
         id="lone-hero"
         hoverable
-        style={{ width: 500 }}
+        style={{ width: 256 }}
         cover={
           <Image 
             alt="Lone hero" 
             src="/images/milestones/lonehero_score.png" 
-            width={500}
-            height={500}
+            width={256}
+            height={256}
           />
         }
       >
@@ -234,13 +237,13 @@ export default function Milestones() {
         children: <Card
         id="dragonsongs-reprise"
         hoverable
-        style={{ width: 720 }}
+        style={{ width: 500 }}
         cover={
           <Image 
             alt="Dragonsong's Reprise (Ultimate)" 
             src="/images/milestones/DSR.png" 
-            width={720}
-            height={405}
+            width={500}
+            height={282}
           />
         }
       >
@@ -266,13 +269,13 @@ export default function Milestones() {
         children: <Card
         id="eureka-orthos-solo"
         hoverable
-        style={{ width: 500 }}
+        style={{ width: 256 }}
         cover={
           <Image 
             alt="Eureka Orthos Solo" 
             src="/images/milestones/eo_score.png" 
-            width={500}
-            height={500}
+            width={256}
+            height={256}
           />
         }
       >
@@ -295,6 +298,7 @@ export default function Milestones() {
 </Col>
         <Col span={6}>
    <Anchor 
+   className={milestonesStyles.anchor}
    affix={false} 
    style={{position:'fixed'}}
    items= {[

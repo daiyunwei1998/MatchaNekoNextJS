@@ -1,6 +1,5 @@
 'use client'
 
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import './globals.css'
@@ -12,7 +11,12 @@ import React from 'react';
 import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
 import { useRouter } from 'next/navigation';
 import MusicPlayer from './components/musicPlayer'
-
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Matcha Neko @ Typhon',
+  description: 'A player website by Matcha Neko in Final Fantasy XIV',
+}
 const { Header, Content, Footer, Sider } = Layout;
 const { Title , Text } = Typography;
 
@@ -37,9 +41,6 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <Head>
-        <title>Matcha Neko @ Typhon</title>
-      </Head>
       <body style={{height:100}}>
       <ConfigProvider
     theme={{

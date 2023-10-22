@@ -1,6 +1,6 @@
 'use client'
 
-
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import './globals.css'
@@ -19,6 +19,7 @@ const { Title , Text } = Typography;
 
 config.autoAddCss = false; 
 
+
 export default function RootLayout({
   children,
 }: {
@@ -36,6 +37,9 @@ export default function RootLayout({
   
   return (
     <html lang="en">
+      <Head>
+        <title>Matcha Neko @ Typhon</title>
+      </Head>
       <body style={{height:100}}>
       <ConfigProvider
     theme={{

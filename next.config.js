@@ -5,6 +5,16 @@ const nextConfig = {  typescript: {
     // your project has type errors.
     // !! WARN !!
     ignoreBuildErrors: true,
-  },}
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/about',
+        permanent: true,
+      },
+    ]
+  },
+}
 
 module.exports = nextConfig

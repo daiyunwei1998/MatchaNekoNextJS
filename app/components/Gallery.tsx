@@ -19,7 +19,7 @@ export default function Gallery({ data }) {
     });
   
     // Define the desired order for a few parentFolders
-    const desiredOrder = ['Cover', 'Friends', 'Litan'];
+    const desiredOrder = ['Cover', 'Protraits','Friends', 'Litan'];
   
     // Sort the groupedImages object based on the desired order
     const sortedGroupedImages = {};

@@ -235,6 +235,37 @@ export default function Milestones() {
       },
       {
         children: <Card
+        id="a8s"
+        hoverable
+        style={{ width: 500 }}
+        cover={
+          <Image 
+            alt="A8S BLU Clear" 
+            src="/images/milestones/ffxiv_11042022_002650_643.png" 
+            width={500}
+            height={282}
+          />
+        }
+      >
+        <Meta title={<span style={titleStyle}>True Blue</span>} description="2022/11/3"  />
+        <p>
+        <FFIcon type="BLU"/> Aikawa Kazuki<br/>
+        <FFIcon type="BLU"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+        <FFIcon type="BLU"/> Yosshi Emerald<br/>
+        <FFIcon type="BLU"/> Robobo Robo<br/>
+        <FFIcon type="BLU"/> Mizuki Fufuyon<br/>
+        <FFIcon type="BLU"/> Izumi Fenrir<br/>
+        <FFIcon type="BLU"/> Cratos Aya<br/>
+        <FFIcon type="BLU"/> Badaboom Giustiniani
+        </p>
+        <p>Gpose by Aikawa Kazuki</p>
+        <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/adab93c121c/" target="_blank" className="eorzeadb_link">View Achievement</a>
+        <br></br>
+        {<a href="https://youtu.be/ca3xMyAwZ_E?si=Qr8nJz2d-k948fbj" target="_blank">View A8S PoV</a>}
+      </Card>,
+      },
+      {
+        children: <Card
         id="dragonsongs-reprise"
         hoverable
         style={{ width: 500 }}
@@ -345,6 +376,11 @@ export default function Milestones() {
         href: '#lone-hero',
         title: <p style={{margin: 0 }}><FFIcon type="DD"/> Lone Hero</p>,
     },
+    {
+      key: 'a8s',
+      href: '#a8s',
+      title: <p style={{margin: 0 }}><FFIcon type="BlueMageDuty"/> True Blue</p>,
+  },
     {
         key: 'dragonsongs-reprise',
         href: '#dragonsongs-reprise',

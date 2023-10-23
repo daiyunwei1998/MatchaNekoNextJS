@@ -10,6 +10,7 @@ function listFilesRecursively(directoryPath) {
 
     for (const item of items) {
       const itemPath = path.join(currentPath, item);
+      const relativePath = path.relative(directoryPath, itemPath); // Calculate the relative path
       const itemStat = fs.statSync(itemPath);
 
       if (itemStat.isDirectory()) {
@@ -28,6 +29,7 @@ function listFilesRecursively(directoryPath) {
           parentFolder,
           filename: item,
           label,
+          path: path.join('./images/screenshots',relativePath),
         });
       }
     }

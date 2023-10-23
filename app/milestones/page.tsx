@@ -285,9 +285,9 @@ export default function Milestones() {
         <br></br>
         <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/32aeb56b47a/" target="_blank" className="eorzeadb_link">View Achievement</a>
         <br></br>
-        {<a href="https://youtu.be/CkDzm3MiuFI" target="_blank">MCH 71-80</a>}
+        {<a href="https://youtu.be/brAfN1ZLRHE" target="_blank">MCH 71-80</a>}
         <br></br>
-        {<a href="https://youtu.be/brAfN1ZLRHE" target="_blank">MCH 81-90</a>}
+        {<a href="https://youtu.be/CkDzm3MiuFI" target="_blank">MCH 81-90</a>}
         <br></br>
         {<a href="https://youtu.be/cRse2bn943w" target="_blank">MCH 91-100</a>}
       </Card>,

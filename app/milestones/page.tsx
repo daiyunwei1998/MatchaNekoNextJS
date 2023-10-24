@@ -33,7 +33,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="My first appearance as a catboy" 
-            src="/images/milestones/catboy.png" 
+            src="/images/milestones/catboy.webp" 
             width={256}
             height={256}
           />
@@ -54,7 +54,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="The Epic of Alexander (Ultimate)" 
-            src="/images/milestones/TEA1.png" 
+            src="/images/milestones/TEA1.webp" 
             width={500}
             height={282}
           />
@@ -83,7 +83,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="Matcha Neko in elemental server" 
-            src="/images/milestones/WoL.png" 
+            src="/images/milestones/WoL.webp" 
             width={500}
             height={282}
           />
@@ -102,7 +102,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="The Unending Coil of Bahamut (Ultimate)" 
-            src="/images/milestones/UCoB.png" 
+            src="/images/milestones/UCoB.webp" 
             width={500}
             height={282}
           />
@@ -131,7 +131,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="My second run of TEA" 
-            src="/images/milestones/TEA2.png" 
+            src="/images/milestones/TEA2.webp" 
             width={500}
             height={282}
           />
@@ -162,7 +162,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="The Weapon's Refrain (Ultimate)" 
-            src="/images/milestones/UWU.png" 
+            src="/images/milestones/UWU.webp" 
             width={500}
             height={282}
           />
@@ -195,7 +195,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="The Necromancer" 
-            src="/images/milestones/necromancer_score.png" 
+            src="/images/milestones/necromancer_score.webp" 
             width={256}
             height={256}
           />
@@ -221,7 +221,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="Lone hero" 
-            src="/images/milestones/lonehero_score.png" 
+            src="/images/milestones/lonehero_score.webp" 
             width={256}
             height={256}
           />
@@ -241,7 +241,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="A8S BLU Clear" 
-            src="/images/milestones/ffxiv_11042022_002650_643.png" 
+            src="/images/milestones/ffxiv_11042022_002650_643.webp" 
             width={500}
             height={282}
           />
@@ -272,7 +272,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="Dragonsong's Reprise (Ultimate)" 
-            src="/images/milestones/DSR.png" 
+            src="/images/milestones/DSR.webp" 
             width={500}
             height={282}
           />
@@ -304,7 +304,7 @@ export default function Milestones() {
         cover={
           <Image 
             alt="Eureka Orthos Solo" 
-            src="/images/milestones/eo_score.png" 
+            src="/images/milestones/eo_score.webp" 
             width={256}
             height={256}
           />

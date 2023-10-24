@@ -29,7 +29,7 @@ function listFilesRecursively(directoryPath) {
           parentFolder,
           filename: item,
           label,
-          path: path.join('./images/screenshots',relativePath),
+          path: path.join('./images/gposes',relativePath),
         });
       }
     }
@@ -41,7 +41,7 @@ function listFilesRecursively(directoryPath) {
 }
 
 // Usage:
-const directoryPath = './public/images/screenshots'; // Change this to your directory path
+const directoryPath = './public/images/gposes'; // Change this to your directory path
 
 
 

@@ -19,7 +19,7 @@ export default function Gallery({ data }) {
     });
   
     // Define the desired order for a few parentFolders
-    const desiredOrder = ['Cover', 'Protraits','Friends', 'Litan'];
+    const desiredOrder = ['Cover', 'by Litan Bellveil @ Aegis','Protraits','Present from 夜子吃椰子@紅玉海','Friends', 'Litan'];
   
     // Sort the groupedImages object based on the desired order
     const sortedGroupedImages = {};

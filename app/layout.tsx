@@ -58,7 +58,6 @@ export default function RootLayout({
 
       <Layout style={{
         backgroundColor:'white',
-        boxShadow:'5px 0 5px rgba(0, 0, 0, 0.5)'
       }}>
       
       <Sider

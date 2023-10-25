@@ -25,10 +25,10 @@ const contentStyle: React.CSSProperties = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
       }}>
-        <img style={{ width: 'auto', height: '100vh', marginTop:'0px',marginBottom: '15px' }} src="/images/about/pink.webp" alt="Pink Image" />
+        <img style={{ width: '100vw', height: 'auto', marginTop:'0px' }} src="/images/about/pink.webp" alt="Pink Image" />
       </div>
+      <div>
       <h2 style={{color:'#FFAEBC', marginBottom:'15px'}}>抹茶貓/Matcha Neko</h2>
       <h3 style={{color:'#C4C4C4'}}>High-end raider, Necromancer, Warrior of Light</h3>
       <a href="https://na.finalfantasyxiv.com/lodestone/character/40688653/" target="_blank" style={{ marginRight: '20px' }}>View Lodestone{'>'}</a>
@@ -42,11 +42,10 @@ const contentStyle: React.CSSProperties = {
         </Col>
       </Row>
       
-      <p style={{marginRight:'50px'}}>I arrived in Eorzea in 2020. Since then, I&apos;ve been a tank main in high-end raids.</p>
-      <p style={{marginRight:'50px'}}>This site contains my memory of being Matcha the neko. The story of me and those friends I&apos;ve met, the story of us - warriors of light. May you ever walk in the light of the crystal.</p>
-      <div>
-     
+      <p>I arrived in Eorzea in 2020. Since then, I&apos;ve been a tank main in high-end raids.</p>
+      <p>This site contains my memory of being Matcha the neko. The story of me and those friends I&apos;ve met, the story of us - warriors of light. May you ever walk in the light of the crystal.</p>
       </div>
+  
          </div>
       
 

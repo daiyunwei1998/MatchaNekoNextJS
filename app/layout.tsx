@@ -25,13 +25,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const  router = useRouter();
-  const handleMenuClick = ({key}) => {
+const  router = useRouter();
+const handleMenuClick = ({key}) => {
     
-    if (key){
-      router.push('/'+key);
-    }
-  }
+if (key){
+router.push('/'+key);
+}
+}
   
   
   return (
@@ -102,10 +102,10 @@ export default function RootLayout({
           mode="inline"
           defaultSelectedKeys={['about']}
           items = {[
-            {label:'About',key:'about'},
-            {label:'Milestones',key:'milestones'},
-            {label:'Gposes',key:'gposes'},
-            {label:'Stories',key:'stories'},
+          { label: 'About', key: 'about', href: '/about' },
+          { label: 'Milestones', key: 'milestones', href: '/milestones' },
+          { label: 'Gposes', key: 'gposes', href: '/gposes' },
+          { label: 'Stories', key: 'stories', href: '/stories' },
           ]}
           style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
         />
@@ -143,8 +143,9 @@ export default function RootLayout({
         </Content>
         <MusicPlayer></MusicPlayer>
         
-        <Footer style={{ textAlign: 'center', backgroundColor:'white' }}>Matcha Neko @ Typhon</Footer>
+       <Footer style={{ textAlign: 'center', backgroundColor:'white' }}>Matcha Neko @ Typhon</Footer>
       </Layout>
+      
       </Layout>
     </ConfigProvider>
 

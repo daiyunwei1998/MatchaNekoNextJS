@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useRef  } from 'react'
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import {FloatButton} from 'antd'

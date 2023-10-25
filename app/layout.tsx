@@ -1,5 +1,7 @@
 'use client'
 
+import React from 'react';
+import StyledComponentsRegistry from '../lib/AntdRegistry';
 import Image from 'next/image'
 import Link from 'next/link';
 import './globals.css'
@@ -7,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faTwitter,faYoutube,faTwitch} from '@fortawesome/free-brands-svg-icons'
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import { config } from "@fortawesome/fontawesome-svg-core";
-import React from 'react';
 import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
 import { useRouter } from 'next/navigation';
 import MusicPlayer from './components/musicPlayer'
@@ -35,6 +36,7 @@ router.push('/'+key);
   
   
   return (
+    <StyledComponentsRegistry>
     <html lang="en">
       <head>
         <title>Matcha Neko @typhon</title>
@@ -102,10 +104,10 @@ router.push('/'+key);
           mode="inline"
           defaultSelectedKeys={['about']}
           items = {[
-          { label: 'About', key: 'about', href: '/about' },
-          { label: 'Milestones', key: 'milestones', href: '/milestones' },
-          { label: 'Gposes', key: 'gposes', href: '/gposes' },
-          { label: 'Stories', key: 'stories', href: '/stories' },
+          { label: 'About', key: 'about'},
+          { label: 'Milestones', key: 'milestones'},
+          { label: 'Gposes', key: 'gposes'},
+          { label: 'Stories', key: 'stories'},
           ]}
           style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
         />
@@ -149,11 +151,12 @@ router.push('/'+key);
       </Layout>
     </ConfigProvider>
 
-        
+    
         
       
       
       </body>
     </html>
+    </StyledComponentsRegistry>
   )
 }

@@ -223,6 +223,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="lone-hero"
         hoverable
         style={{ width: 256 }}

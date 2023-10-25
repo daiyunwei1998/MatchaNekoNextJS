@@ -135,7 +135,6 @@ export default function RootLayout({
       
 
       <Layout>
-        <Header style={{ padding: 0, backgroundColor:'white'}} />
         <Content style={{ 
         padding: '24px 16px 0',
         overflow: "initial",

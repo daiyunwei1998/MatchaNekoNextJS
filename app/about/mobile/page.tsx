@@ -1,6 +1,10 @@
 import React from 'react'
 import { Row, Col,Statistic } from 'antd';
 import FFIcon from '../../components/FFIcon';
+import localFont from 'next/font/local'
+
+// constom font
+const myFont = localFont({ src: '../../../fonts/KleeOne-SemiBold-TC.ttf' })
 
 function about() {
   
@@ -13,7 +17,7 @@ const contentStyle: React.CSSProperties = {
 };
 
   return (
-   <div>
+   <main className={myFont.className}>
     <p>this page is still WIP for mobile support</p>
      <div style={{ display: 'flex', alignItems: 'center' }}>
       <img style={{ width: '50%', height: 'auto'}} src="/images/about/cover.png" ></img>
@@ -37,7 +41,7 @@ const contentStyle: React.CSSProperties = {
       </div>
       
     </div>
-   </div>
+   </main>
   )
 }
 export default about;

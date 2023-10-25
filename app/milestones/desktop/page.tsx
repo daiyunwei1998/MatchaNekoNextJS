@@ -6,18 +6,19 @@ import FFIcon from '../../components/FFIcon';
 import { Anchor, Row, Col } from 'antd';
 import { Image } from 'antd';
 import Script from 'next/script'
-
+import localFont from 'next/font/local'
 import milestonesStyles from './milestonesStyles.module.css'
 
 const { Meta } = Card;
 const titleStyle = {
   color: '#ffaebc', // Change the color to your desired color
 };
-
+// constom font
+const myFont = localFont({ src: '../../../fonts/KleeOne-SemiBold-TC.ttf' })
 
 export default function Milestones() {
   return (
-    <div>
+    <main>
     <Script src="https://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v2"></Script>
     
     <Row>
@@ -27,6 +28,7 @@ export default function Milestones() {
       {
         children:  
         <Card
+        className={myFont.className}
         id = "new-adventurer"
         hoverable
         style={{ width: 256 }}
@@ -48,6 +50,7 @@ export default function Milestones() {
       {
         children:      
         <Card
+        className={myFont.className}
         id="the-epic-of-alexander"
         hoverable
         style={{ width: 500 }}
@@ -77,6 +80,7 @@ export default function Milestones() {
       },
       {
         children:  <Card
+        className={myFont.className}
         id="to-elemental"
         hoverable
         style={{ width: 500 }}
@@ -96,6 +100,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="the-unending-coil"
         hoverable
         style={{ width: 500 }}
@@ -125,6 +130,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="second-run-of-tea"
         hoverable
         style={{ width: 500 }}
@@ -156,6 +162,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="the-weapons-refrain"
         hoverable
         style={{ width: 500 }}
@@ -189,6 +196,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="the-necromancer"
         hoverable
         style={{ width: 256 }}
@@ -215,6 +223,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="lone-hero"
         hoverable
         style={{ width: 256 }}
@@ -235,6 +244,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="a8s"
         hoverable
         style={{ width: 500 }}
@@ -266,6 +276,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="dragonsongs-reprise"
         hoverable
         style={{ width: 500 }}
@@ -298,6 +309,7 @@ export default function Milestones() {
       },
       {
         children: <Card
+        className={myFont.className}
         id="eureka-orthos-solo"
         hoverable
         style={{ width: 256 }}
@@ -329,7 +341,7 @@ export default function Milestones() {
 </Col>
         <Col span={6}>
    <Anchor 
-   className={milestonesStyles.anchor}
+   className={`${milestonesStyles.anchor} ${myFont.className}`}
    affix={false} 
    style={{position:'fixed'}}
    items= {[
@@ -400,7 +412,7 @@ export default function Milestones() {
       </Col>
       </Row>
   
-  </div>
+  </main>
   
   
    

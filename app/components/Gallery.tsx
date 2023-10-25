@@ -3,6 +3,10 @@
 import React from 'react';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import { Divider, Image as AntdImage, Badge } from 'antd';
+import localFont from 'next/font/local'
+
+// constom font
+const myFont = localFont({ src: '../../fonts/KleeOne-SemiBold-TC.ttf' })
 
 export default function Gallery({ data }) {
     // Create an object to group images by parentFolder
@@ -54,8 +58,9 @@ export default function Gallery({ data }) {
                 {images.map((image, j) => (
                   <div key={j}>
                     {image.label ? (
-                      <Badge.Ribbon text={image.label}>
+                      <Badge.Ribbon className={myFont.className} text={image.label}>
                         <AntdImage
+                          className={myFont.className}
                           src={image.path}
                           style={{ width: '100%', display: 'block' }}
                           alt=""

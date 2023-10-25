@@ -38,6 +38,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Matcha Neko @typhon</title>
+        <link rel="icon" href="/images/site/icon.webp" />
+
+        <meta property="og:title" content="Matcha Neko @ Typhon"/>
+        <meta property="og:description" content="The story of me and those friends I've met, the story of us - warriors of light."/>
+        <meta property="og:image" content="/images/gposes/cover/oldapartment.webp"/>
+        <meta property="og:url" content="www.matchaneko.com"/>
+        <meta property="og:type" content="website"/>
+
       </head>
       <body style={{height:100}}>
       <ConfigProvider

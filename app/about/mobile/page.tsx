@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col,Statistic } from 'antd';
-import FFIcon from '../components/FFIcon';
+import FFIcon from '../../components/FFIcon';
 
 function about() {
   
@@ -14,6 +14,7 @@ const contentStyle: React.CSSProperties = {
 
   return (
    <div>
+    <p>this page is still WIP for mobile support</p>
      <div style={{ display: 'flex', alignItems: 'center' }}>
       <img style={{ width: '50%', height: 'auto'}} src="/images/about/cover.png" ></img>
       <div>

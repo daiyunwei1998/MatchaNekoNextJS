@@ -2,7 +2,7 @@ import { NextRequest, NextResponse, userAgent } from 'next/server'
 
 // Set pathname where middleware will be executed
 export const config = {
-  matcher: '/test',
+  matcher: ['/milestones','/about'],
 }
 
 export function middleware(req) {
@@ -13,7 +13,8 @@ export function middleware(req) {
   const viewport = device.type === 'mobile' ? 'mobile' : 'desktop'
   
   // Update the expected url
-  req.nextUrl.pathname = `${config.matcher}/${viewport}`
+  req.nextUrl.pathname = `${req.nextUrl.pathname}/${viewport}`
+
   // Return rewrited response
   return NextResponse.rewrite(req.nextUrl)
 }

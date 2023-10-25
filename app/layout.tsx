@@ -42,7 +42,7 @@ export default function RootLayout({
 
         <meta property="og:title" content="Matcha Neko @ Typhon"/>
         <meta property="og:description" content="The story of me and those friends I've met, the story of us - warriors of light."/>
-        <meta property="og:image" content="/images/gposes/cover/oldapartment.webp"/>
+        <meta property="og:image" content="/images/site/ogCover.webp"/>
         <meta property="og:url" content="www.matchaneko.com"/>
         <meta property="og:type" content="website"/>
 

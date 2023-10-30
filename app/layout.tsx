@@ -108,6 +108,7 @@ router.push('/'+key);
           { label: 'Milestones', key: 'milestones'},
           { label: 'Gposes', key: 'gposes'},
           { label: 'Stories', key: 'stories'},
+          { label: 'Guides', key: 'guides'},
           ]}
           style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
         />

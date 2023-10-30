@@ -2,7 +2,7 @@
 title: 澤塔之章
 avatar: /images/fficon/MSQ.png
 date: 2023-07-01
-description:  2023-07-01
+description:  '2023-07-01'
 image: /images/gposes/zeta/IMG_1895.JPG
 excert: 記錄一位帶來溫暖的友人
 slug: story-of-zeta

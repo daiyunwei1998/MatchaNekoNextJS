@@ -10,7 +10,6 @@ import {faTwitter,faYoutube,faTwitch} from '@fortawesome/free-brands-svg-icons'
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Layout, Menu, ConfigProvider,Image as AntdImage,Typography,Space} from 'antd';
-import { useRouter } from 'next/navigation';
 import MusicPlayer from './components/musicPlayer'
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -26,15 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-const  router = useRouter();
-const handleMenuClick = ({key}) => {
-    
-if (key){
-router.push('/'+key);
-}
-}
-  
-  
+
   return (
     <StyledComponentsRegistry>
     <html lang="en">
@@ -99,16 +90,15 @@ router.push('/'+key);
         <Title level={3} style={{textAlign:"center",color:"#FFAEBC"}}> Matcha Neko </Title>
         
         <Menu
-          onClick= {handleMenuClick}
           theme="light"
           mode="inline"
           defaultSelectedKeys={['about']}
           items = {[
-          { label: 'About', key: 'about'},
-          { label: 'Milestones', key: 'milestones'},
-          { label: 'Gposes', key: 'gposes'},
-          { label: 'Stories', key: 'stories'},
-          { label: 'Guides', key: 'guides'},
+          { label:  <Link href={`/about`}>About</Link>, key: 'about'},
+          { label: <Link href={`/milestones`}>Milestones</Link>, key: 'milestones'},
+          { label:  <Link href={`/gposes`}>Gposes</Link>,key: 'gposes'},
+          { label: <Link href={`/stories`}>Stories</Link>, key: 'stories'},
+          { label: <Link href={`/guides`}>Guides</Link>, key: 'guides'},
           ]}
           style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
         />

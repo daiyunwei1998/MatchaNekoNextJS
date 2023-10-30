@@ -1,16 +1,24 @@
-import React from 'react'
-import { Spin } from 'antd';
+import React from 'react';
+import { Avatar, List, Space } from 'antd';
+import AllPosts from '../components/AllPosts'
+import { getAllPosts } from '@/lib/posts-util';
 
-export default function stories() {
+const data1 = Array.from({ length: 23 }).map((_, i) => ({
+  href: 'https://ant.design',
+  title: `ant design part ${i}`,
+  avatar: 'images/fficon/MSQ.png',
+  description:
+    'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+  content:
+    'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+}));
+
+const data = getAllPosts()
+
+export default function Stories() {
   return (
-    <div style={{ display: 'flex'}}>
-      <div style={{marginLeft:'50px'}}>
-      <p >I&apos;ve met awesome people like 夜子吃椰子@紅玉海, 伊弗列姆@晨曦王座, Liasa@神意之地. They are my courage and my strength, the real treasure of my quest. </p>
-      <br></br>
-      <h2 style={{color:'#FFAEBC'}}><Spin />  This section is still WIP. </h2>
-      </div>
-      
-      <img alt = 'Work in progress' style={{ width: '40%', height: 'auto'}} src="/images/stories/WIP.png"></img>
-    </div>
+    <AllPosts data={data}/>
   )
 }
+
+

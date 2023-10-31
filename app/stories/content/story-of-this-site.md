@@ -27,7 +27,7 @@ I also received tremendous help from ant design, a popular front-end UI componen
 ## Generative AI
 I have doubted whether a Large Language Model will actually aid a real-life project. There was news about how it can make a simple program or website with prompt, but most projects are more complicated than that. However, ChatGPT (GPT 3.5) changed my mind.
 
-When working on this project, I was only starting to learn javascript. It was a lot harder to get used to as a Python programmer. ChatGPT saved me a lot of time like a experienced programmer helping a novice.
+When working on this project, I was only starting to learn javascript. It was a lot harder to get used to as a Python programmer. ChatGPT saved me a lot of time like an experienced programmer helping a novice.
 The code used to read all files from one folder recursively and label it according to given rules were written by no other than chatGPT itself. This problem involves an understanding of useful function ('fs') and javascript object minipulation, which I'm not familiar with. What surprised me is the generative AI's ability to implement this with the context in mind, with little prompt needed. The code it generated can be plugged in my function directly with little or no change necessary.
 
 

@@ -1,15 +1,43 @@
-import React from 'react'
-import { Spin } from 'antd';
+'use client' //necessary for card.meta to work
 
-export default function stories() {
+import React from 'react';
+import {Card,Image,Divider,Flex } from 'antd';
+
+export default function Guides() {
   return (
-    <div style={{ display: 'flex'}}>
-      <div style={{marginLeft:'50px'}}>
-    
-      <h2 style={{color:'#FFAEBC'}}><Spin />  This section is still WIP. </h2>
-      </div>
+    <div>
+    <Divider  orientation="left" style={{ color: '#FFAEBC' }}>Eureka Orthos</Divider>
+    <Flex wrap="wrap" gap="small">
+          <Card
+            hoverable
+            style={{ width: 240 }}
+            cover={
+                <Image height={135} alt="example" src="/images/guides/excalibur.webp" />
+          }
+          >
+            <Card.Meta
+            title='EO Floor 99 BOSS'
+            description={<a href='https://youtu.be/Pdjm1YqDUco' target="_blank">Watch on Youtube</a>}
+            />
+            
+        </Card>
+
       
-      <img alt = 'Work in progress' style={{ width: '40%', height: 'auto'}} src="/images/site/WIP.png"></img>
+
+        <Card
+            hoverable
+            style={{ width: 240 }}
+            cover={
+                <Image alt="example" src="/images/guides/floor90.JPG" />
+          }
+          >
+            <Card.Meta
+            title='EO Floor 90 BOSS'
+            description={<a href='https://youtu.be/soKEQ3Q_1kA' target="_blank">Watch on Youtube</a>}
+            />
+            
+        </Card>
+    </Flex>
     </div>
   )
 }

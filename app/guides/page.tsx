@@ -28,7 +28,7 @@ export default function Guides() {
             hoverable
             style={{ width: 240 }}
             cover={
-                <Image alt="example" src="/images/guides/floor90.JPG" />
+                <Image alt="example" src="/images/guides/floor90.webp" />
           }
           >
             <Card.Meta

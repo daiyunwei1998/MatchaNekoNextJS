@@ -49,8 +49,11 @@ export default function RootLayout({
       components: {
         Menu:{
           "colorPrimary": "#ffaebc",
-          itemSelectedBg:"#F5F5F5",
+          itemSelectedBg:"white",
           itemSelectedColor:"#FFAEBC",
+          itemHoverBg:'white',
+          itemActiveBg:'whtie',
+          itemColor:"#8E8E8E"
       },
       
     },
@@ -100,7 +103,7 @@ export default function RootLayout({
           { label: <Link href={`/stories`}>Stories</Link>, key: 'stories'},
           { label: <Link href={`/guides`}>Guides</Link>, key: 'guides'},
           ]}
-          style={{itemActiveBg:'#F5F5F5', overflow: "initial"}}
+          style={{itemActiveBg:'#F5F5F5', overflow: "initial",textAlign:'center',fontSize:'1.1rem'}}
         />
 
      

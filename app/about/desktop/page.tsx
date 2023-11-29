@@ -29,7 +29,7 @@ const contentStyle: React.CSSProperties = {
       <div>
       <Row gutter={20}>
         <Col span={8}>
-          <Statistic title="Ultimate Raids" value={4} prefix={<FFIcon type="HighEndDuty"/> } suffix="/ 5"/>
+          <Statistic title="Ultimate Raids" value={5} prefix={<FFIcon type="HighEndDuty"/> } suffix="/ 5"/>
         </Col>
         <Col span={8}>
           <Statistic title="Deep Dungeons" value={3} prefix={<FFIcon type="DD"/> } suffix="/ 3" />

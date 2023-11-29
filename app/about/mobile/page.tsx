@@ -35,7 +35,7 @@ const contentStyle: React.CSSProperties = {
       <a href="https://www.fflogs.com/character/id/17514901" target="_blank" >View FFLogs{'>'}</a>
       <Row style ={{marginBottom:'15px',marginTop:'15px'}} gutter={20}>
         <Col span={10}>
-          <Statistic title="Ultimate Raids" value={4} prefix={<FFIcon type="HighEndDuty"/> } suffix="/ 5"/>
+          <Statistic title="Ultimate Raids" value={5} prefix={<FFIcon type="HighEndDuty"/> } suffix="/ 5"/>
         </Col>
         <Col span={10}>
           <Statistic title="Deep Dungeons" value={3} prefix={<FFIcon type="DD"/> } suffix="/ 3" />

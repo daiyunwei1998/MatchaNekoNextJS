@@ -13,7 +13,7 @@ Everytime I signed up for a static, I always have to pull out a Google doc to sh
 
 > This site contains my memory of being Matcha the neko. The story of me and those friends I've met.
 
-That was how the website came about. The [previous version](https://magnificent-madeleine-bc99ae.netlify.app/index.html##about) was done by adapting free templates. It was a fruitful attempt but limited in functionalities. I had to spent quite some time figuring out how to implement a timeline using pure html and css. The contents were also hard-coded. For gposes it became a huge issue where I had to add a few lines of html codes for a single image. The html file will become long and messy in the end, rendering painful to maintain.
+That was how the website came about. The [previous version](https://magnificent-madeleine-bc99ae.netlify.app/index.html##about) was done by adapting free templates. It was a fruitful attempt but limited in functionalities. I had to spent quite some time figuring out how to implement a timeline using pure html and css. The contents were also hard-coded. For gposes it became a huge issue where I had to add a few lines of html codes for a single image. The html file will become long and messy in the end, rendering it painful to maintain.
 
 ![The previous version of matchaneko.com](ver1.webp)
 

@@ -3,7 +3,7 @@
 import React from 'react';
 import { Timeline,Card } from 'antd';
 import FFIcon from '../../components/FFIcon';
-import { Anchor, Row, Col } from 'antd';
+import { Anchor, Row, Col, Carousel } from 'antd';
 import { Image } from 'antd';
 import Script from 'next/script'
 import localFont from 'next/font/local'
@@ -340,15 +340,29 @@ export default function Milestones() {
         hoverable
         style={{ width: 500 }}
         cover={
-          <Image 
-            alt="The Omega Protocol (Ultimate)" 
-            src="/images/site/ogCover.webp" 
-            width={500}
-            height={282}
-          />
+          <Carousel autoplay>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP1.webp"  width={500} height={282}/>
+            </div>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP2.webp"  width={500} height={282}/>
+            </div>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP3.webp"  width={500} height={282}/>
+            </div>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/back.webp"  width={500} height={282}/>
+            </div>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Star.webp"  width={500} height={282}/>
+            </div>
+            <div>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Ballsheep.webp"  width={500} height={282}/>
+            </div>
+          </Carousel>
         }
       >
-        <Meta title={<span style={titleStyle}>???</span>} description="???"  />
+        <Meta title={<span style={titleStyle}>The Omega Protocol (Ultimate)</span>} description="2023/11/29"  />
         <p>
           <FFIcon type="WAR"/> Swish Li<br/>
           <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
@@ -359,9 +373,9 @@ export default function Milestones() {
           <FFIcon type="DNC"/> Temeraire Bear<br/>
           <FFIcon type="SMN"/> Nakiri Eliya
         </p>
-        {<a href="" target="_blank">View FFlogs(None)</a>}
+        {<a href="https://www.fflogs.com/character/id/17514901#zone=53&boss=1068" target="_blank">View FFlogs</a>}
         <br></br>
-        {<a href="https://www.twitch.tv/matchanekoffxiv" target="_blank">Watch Stream</a>}
+        {<a href="https://youtu.be/VEedtBzyKr0" target="_blank">View First Clear PoV</a>}
       </Card>,
       },
     ]}
@@ -433,9 +447,9 @@ export default function Milestones() {
         title: <p style={{margin: 0 }}><FFIcon type="DD"/> Once and Future Queen</p>,
     },
     {
-      key: 'Unknown',
+      key: 'the-omega-protocol',
       href: '#the-omega-protocol',
-      title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> ???</p>,
+      title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/>The Omega Protocol (Ultimate)</p>,
   },
   ]}
    

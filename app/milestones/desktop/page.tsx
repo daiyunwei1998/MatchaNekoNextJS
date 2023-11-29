@@ -154,7 +154,6 @@ export default function Milestones() {
         <FFIcon type="BRD"/> Reno Lowitz<br/>
         <FFIcon type="DNC"/> Aira Aone
         </p>
-        <p>Gpose by Quia Aquette</p>
         {<a href="https://www.fflogs.com/character/id/17514901#zone=43&boss=1062&partition=7" target="_blank">View FFlogs</a>}
         <br></br>
         {<a href="https://www.youtube.com/watch?v=AnXAHW9MaJs&ab_channel=MatchaNeko" target="_blank">View PoV</a>}
@@ -335,6 +334,36 @@ export default function Milestones() {
         {<a href="https://youtu.be/cRse2bn943w" target="_blank">MCH 91-100</a>}
       </Card>,
       },
+      {
+        children: <Card
+        id="the-omega-protocol"
+        hoverable
+        style={{ width: 500 }}
+        cover={
+          <Image 
+            alt="The Omega Protocol (Ultimate)" 
+            src="/images/site/ogCover.webp" 
+            width={500}
+            height={282}
+          />
+        }
+      >
+        <Meta title={<span style={titleStyle}>???</span>} description="???"  />
+        <p>
+          <FFIcon type="WAR"/> Swish Li<br/>
+          <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
+          <FFIcon type="AST"/> Star Star<br/>
+          <FFIcon type="SCH"/> Ball Sheep<br/>
+          <FFIcon type="RPR"/> Ren Assassin<br/>
+          <FFIcon type="NIN"/> Xuan Pahlo<br/>
+          <FFIcon type="DNC"/> Temeraire Bear<br/>
+          <FFIcon type="SMN"/> Nakiri Eliya
+        </p>
+        {<a href="" target="_blank">View FFlogs(None)</a>}
+        <br></br>
+        {<a href="https://www.twitch.tv/matchanekoffxiv" target="_blank">Watch Stream</a>}
+      </Card>,
+      },
     ]}
   />
 
@@ -403,6 +432,11 @@ export default function Milestones() {
         href: '#eureka-orthos-solo',
         title: <p style={{margin: 0 }}><FFIcon type="DD"/> Once and Future Queen</p>,
     },
+    {
+      key: 'Unknown',
+      href: '#the-omega-protocol',
+      title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> ???</p>,
+  },
   ]}
    
    

@@ -337,6 +337,7 @@ export default function Milestones() {
       {
         children: <Card
         id="the-omega-protocol"
+        className={myFont.className}
         hoverable
         style={{ width: 500 }}
         cover={
@@ -362,7 +363,7 @@ export default function Milestones() {
           </Carousel>
         }
       >
-        <Meta title={<span style={titleStyle}>The Omega Protocol (Ultimate)</span>} description="2023/11/29"  />
+        <Meta title={<span style={titleStyle}>The Omega Protocol (Ultimate)</span>} description="2023/11/29 Patch 6.5"  />
         <p>
           <FFIcon type="WAR"/> Swish Li<br/>
           <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>
@@ -449,7 +450,7 @@ export default function Milestones() {
     {
       key: 'the-omega-protocol',
       href: '#the-omega-protocol',
-      title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/>The Omega Protocol (Ultimate)</p>,
+      title: <p style={{margin: 0 }}><FFIcon type="HighEndDuty"/> The Omega Protocol (Ultimate)</p>,
   },
   ]}
    

@@ -337,32 +337,33 @@ export default function Milestones() {
       {
         children: <Card
         id="the-omega-protocol"
+        className={myFont.className}
         hoverable
-        style={{ width: 500 }}
+        style={{ width: 256 }}
         cover={
-          <Carousel autoplay>
+          <Carousel autoplay style={{'width':256,'height':144}}>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP1.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP1.webp"  width={256} height={144}/>
             </div>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP2.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP2.webp"  width={256} height={144}/>
             </div>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP3.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/TOP3.webp"  width={256} height={144}/>
             </div>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/back.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/back.webp"  width={256} height={144}/>
             </div>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Star.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Star.webp"  width={256} height={144}/>
             </div>
             <div>
-            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Ballsheep.webp"  width={500} height={282}/>
+            <Image alt="The Omega Protocol (Ultimate)"  src="/images/gposes/Ultimates/Ballsheep.webp"  width={256} height={144}/>
             </div>
           </Carousel>
         }
       >
-        <Meta title={<span style={titleStyle}>The Omega Protocol (Ultimate)</span>} description="2023/11/29"  />
+        <Meta title={<span style={titleStyle}>The Omega Protocol (Ultimate)</span>} description="2023/11/29 Patch 6.5"  />
         <p>
           <FFIcon type="WAR"/> Swish Li<br/>
           <FFIcon type="PLD"/> <strong style={{color:"#ffaebc"}}>Matcha Neko</strong><br/>

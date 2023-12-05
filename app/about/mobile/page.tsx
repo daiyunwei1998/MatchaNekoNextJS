@@ -26,7 +26,7 @@ const contentStyle: React.CSSProperties = {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-        <img style={{ width: '100vw', height: 'auto', marginTop:'0px' }} src="/images/about/pink.webp" alt="Pink Image" />
+        <img style={{ width: '100vw', height: '80svh', marginTop:'0px'}} src="/images/about/pink.webp" alt="Pink Image" />
       </div>
       <div>
       <h2 style={{color:'#FFAEBC', marginBottom:'15px'}}>抹茶貓/Matcha Neko</h2>

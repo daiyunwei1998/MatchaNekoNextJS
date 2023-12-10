@@ -1,0 +1,27 @@
+{
+    "id": "dragonsongs-reprise",
+    "title": "Dragonsong's Reprise (Ultimate)",
+    "description": "2023/1/10",
+    "images": [
+      ["/images/milestones/DSR.webp", "Dragonsong's Reprise (Ultimate)"]
+    ],
+    "partyList": [
+      ["DRK", "Yoyo Adsl"],
+      ["PLD", "Matcha Neko"],
+      ["WHM", "Akari Kurosawa"],
+      ["SGE", "Akira Rune"],
+      ["SAM", "Yonah Belzerg"],
+      ["NIN", "Alainne Ciel"],
+      ["MCH", "Nirvash Zero"],
+      ["RDM", "Charlotte Arashiniji"]
+    ],
+    "contents": [
+      "Special Thanks <FFIcon type='RDM'/> Canis Ares @ Aegis",
+      "Gpose by Akira Rune @Aegis"
+    ],
+    "urls": [
+      ["View FFlogs", "https://www.fflogs.com/character/id/17514901#zone=45&boss=1065"],
+      ["View First Clear PoV", "https://youtu.be/O0L9y35wWYk"]
+    ]
+  }
+  

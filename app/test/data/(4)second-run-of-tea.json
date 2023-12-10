@@ -1,0 +1,25 @@
+{
+    "id": "second-run-of-tea",
+    "size":"large",
+    "title": "The Epic of Alexander (Ultimate)",
+    "description": "2022/7/17 Patch 6.1",
+    "images": [
+      ["/images/milestones/TEA2.webp", "My second run of TEA"]
+    ],
+    "partyList": [
+      ["WAR", "Rexia Phese"],
+      ["GNB", "Matcha Neko"],
+      ["AST", "Samuel Sung"],
+      ["SGE", "Rokuru Kirisame"],
+      ["SAM", "Isana Tigger"],
+      ["BLM", "Sekkar Miller"],
+      ["BRD", "Reno Lowitz"],
+      ["DNC", "Aira Aone"]
+    ],
+    "contents": [],
+    "urls": [
+      ["View FFlogs", "https://www.fflogs.com/character/id/17514901#zone=43&boss=1062&partition=7"],
+      ["View PoV", "https://www.youtube.com/watch?v=AnXAHW9MaJs&ab_channel=MatchaNeko"]
+    ]
+  }
+  

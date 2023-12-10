@@ -1,0 +1,24 @@
+{
+    "id": "the-unending-coil",
+    "title": "The Unending Coil of Bahamut (Ultimate)",
+    "size":"large",
+    "description": "2022/5/22 Patch 6.1",
+    "images": [
+      ["/images/milestones/UCoB.webp", "The Unending Coil of Bahamut (Ultimate)"]
+    ],
+    "partyList": [
+      ["GNB", "Hot Cappuccino"],
+      ["WAR", "Asore Producer"],
+      ["AST", "Kotoha Swallow"],
+      ["SCH", "Quia Aquette"],
+      ["NIN", "Khaleesi Moone"],
+      ["PLD", "Matcha Neko"],
+      ["MCH", "Onion Gdiva"],
+      ["SMN", "Hana Kagerou"]
+    ],
+    "contents": ["Gpose by Quia Aquette"],
+    "urls": [
+      ["View FFlogs", "https://www.fflogs.com/character/id/17514901#zone=43&partition=-2&boss=1060"]
+    ]
+  }
+  

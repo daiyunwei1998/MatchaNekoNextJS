@@ -1,0 +1,11 @@
+{
+  "id": "new-adventurer",
+  "size":"small",
+  "title": "New adventurer",
+  "description": "2020",
+  "coverImage": [["/images/milestones/catboy.webp","My first appearance as a catboy"]],
+  "contents": [
+    "抹茶猫@沃仙曦染",
+    "Portrait by Liasa@神意之地"
+  ]
+}

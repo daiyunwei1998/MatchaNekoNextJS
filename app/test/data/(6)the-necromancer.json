@@ -1,0 +1,18 @@
+{
+    "id": "the-necromancer",
+    "size":"small",
+    "title": "The Necromancer",
+    "description": "2022/9/18",
+    "images": [
+      ["/images/milestones/necromancer_score.webp", "The Necromancer"]
+    ],
+    "contents": [
+      "The Palace of the Dead floor 0-200 solo with machinist."
+    ],
+    "urls": [
+      ["MCH 170-180", "https://www.youtube.com/watch?v=J3idW15l9us&t=6s&ab_channel=MatchaNeko"],
+      ["MCH 180-190", "https://www.youtube.com/watch?v=xLX-ntCxv_0&ab_channel=MatchaNeko"],
+      ["MCH 190-200", "https://www.youtube.com/watch?v=js07n0Kq5_s&ab_channel=MatchaNeko"]
+    ]
+  }
+  

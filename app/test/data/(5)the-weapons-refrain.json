@@ -1,0 +1,28 @@
+{
+    "id": "the-weapons-refrain",
+    "size":"large",
+    "title": "The Weapon's Refrain (Ultimate)",
+    "description": "2022/8/14 Patch 6.1",
+    "images": [
+      ["/images/milestones/UWU.webp", "The Weapon's Refrain (Ultimate)"]
+    ],
+    "partyList": [
+      ["WAR", "Wind Noname"],
+      ["PLD", "Matcha Neko"],
+      ["WHM", "Litan Bellveil"],
+      ["SCH", "Ui Ha"],
+      ["SAM", "Talon Wakuwaku"],
+      ["NIN", "Dodo Lee"],
+      ["MCH", "Explooosive Raaay"],
+      ["SMN", "Shibusaka Yun"]
+    ],
+    "contents": [
+      "Gpose by Litan Bellveil @Aegis"
+    ],
+    "urls": [
+      ["View FFlogs", "https://www.fflogs.com/character/id/17514901#zone=43&boss=1061"],
+      ["View First Clear PoV", "https://youtu.be/KliZMKf4NQw"],
+      ["View Farming PoV", "https://youtu.be/LEZY_noUbXw"]
+    ]
+  }
+  

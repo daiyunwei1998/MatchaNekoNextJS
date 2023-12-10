@@ -1,19 +1,19 @@
-import readJsonFiles from '../../lib/readJsonFiles'
+import React from 'react';
 import path from 'path';
-
+import { Timeline } from 'antd';
+import readJsonFiles from '../../lib/readJsonFiles';
 import MilestoneItem from '../components/MilestoneItem';
-import localFont from 'next/font/local'
 
+export default function Page() {
+  const data = readJsonFiles(path.join(process.cwd(), 'app', 'test', 'data'));
 
-export default function page() {
-    const data = readJsonFiles(path.join(process.cwd(),'app','test','data'))
+  const timelineItems = data.map((singleData, index) => ({
+    children: <MilestoneItem key={index} data={singleData} />,
+  }));
 
-    return (
-      <div>
-        {data.map((singleData, index) => (
-          <MilestoneItem key={index} data={singleData} />
-        ))}
-      </div>
-  )
+  return (
+    <div>
+      <Timeline items={timelineItems} />
+    </div>
+  );
 }
-

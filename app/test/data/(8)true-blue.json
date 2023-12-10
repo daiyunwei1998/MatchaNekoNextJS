@@ -1,5 +1,6 @@
 {
     "id": "true-blue",
+    "size":"large",
     "title": "True Blue",
     "description": "2022/11/3",
     "images": [
@@ -19,6 +20,7 @@
       "Gpose by Aikawa Kazuki"
     ],
     "urls": [
+      ["View Achievement", "https://na.finalfantasyxiv.com/lodestone/playguide/db/achievement/adab93c121c/"],
       ["View A8S PoV", "https://youtu.be/ca3xMyAwZ_E?si=Qr8nJz2d-k948fbj"]
     ]
   }

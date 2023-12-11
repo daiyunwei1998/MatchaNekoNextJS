@@ -2,13 +2,9 @@
 
 import parse from 'html-react-parser';
 import React from 'react'
-import { Timeline,Card } from 'antd';
-import FFIcon from './FFIcon';
-import { Anchor, Row, Col,Carousel } from 'antd';
-import { Image } from 'antd';
+import {Card } from 'antd';
 import Script from 'next/script'
 import localFont from 'next/font/local'
-import milestonesStyles from './milestonesStyles.module.css'
 import MilestoneItemCover from './MilestoneItemCover';
 import PartyList from '../components/partyList';
 
@@ -40,20 +36,20 @@ export default function MilestoneItem(params) {
         style={{ width: widthValue }}
         cover={<MilestoneItemCover width = {widthValue} height = {heightValue} images = {data.images}/>}  
       >
-      <Meta title={<span style={{color: '#ffaebc'}}>{data.title}</span>} description={data.description}  />
+      <Meta className={myFont.className}  title={<span style={{color: '#ffaebc'}}>{data.title}</span>} description={data.description}  />
       
-      <div style={{ marginTop: '1rem' }}>
+      <div className={myFont.className}  style={{ marginTop: '1rem' }}>
         {data.partyList && data.partyList.length > 0 && <PartyList plist = {data.partyList}/>}
       </div>
       
       
-      <div style={{ marginTop: '1rem' }}>
+      <div  className={myFont.className} style={{ marginTop: '1rem' }}>
         {data.contents && data.contents.length > 0 && data.contents.map((content, index) => (
           <p style={{ marginTop: '0', marginBottom: '0' }} key={index}>{parse(content)}</p>
         ))}
       </div>
 
-      <div style={{ marginTop: '1rem' }}>
+      <div  className={myFont.className} style={{ marginTop: '1rem' }}>
         {data.urls && data.urls.length > 0 && data.urls.map((url, index) => (
             <React.Fragment key={index}>
               {url[0] == "View Achievement" ? ( <a href={url[1]} target="_blank" className = "eorzeadb_link">{url[0]}</a>) : (

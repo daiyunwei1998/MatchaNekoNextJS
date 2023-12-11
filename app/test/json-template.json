@@ -1,10 +1,27 @@
 {
-    "id":"",
-    "title":"",
-    "description":"",
-    "image_alt":"",
-    "images":"",
-    "partyList":"",
-    "content":"",
-    "urls":""
-}
+    "id": "",
+    "type":"HighEndDuty",
+    "size":"large",
+    "title": "",
+    "description": "",
+    "images": [
+      ["src", "alt"]
+    ],
+    "partyList": [
+      ["WAR", ""],
+      ["PLD", ""],
+      ["AST", ""],
+      ["SCH", ""],
+      ["RPR", ""],
+      ["NIN", ""],
+      ["DNC", ""],
+      ["SMN", ""]
+    ],
+    "contents": [
+    ],
+    "urls": [
+      ["View FFlogs", ""],
+      ["View First Clear PoV", ""]
+    ]
+  }
+  

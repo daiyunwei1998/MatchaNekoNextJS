@@ -9,7 +9,6 @@ export default function AllPosts({data}) {
     itemLayout="vertical"
     size="large"
     dataSource={data}
-   
     renderItem={(item) => (
       <List.Item
         key={item.title}

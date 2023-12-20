@@ -4,7 +4,6 @@ import { Image, Carousel } from 'antd';
 export default function MilestoneItemCover({ width, height, images }) {
   const widthValue = width;
   const heightValue = height;
-  console.log(images)
 
   if (images &&  images.length > 1) {
     // Render carousel if there is more than one image

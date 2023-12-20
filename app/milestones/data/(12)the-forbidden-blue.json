@@ -1,0 +1,30 @@
+{
+    "id": "the-forbidden-blue",
+    "type":"BlueMageDuty",
+    "size":"large",
+    "title": "Forbidden Blue",
+    "description": "2023/12/20 Patch 6.51",
+    "images": [
+      ["/images/gposes/Raids/(by Noko Wakase @ Ramuh)ffxiv_dx11_2023-12-21_00-02-35.webp", "E12S BLU CLEAR"],
+      ["/images/gposes/Raids/(by Noko Wakase @ Ramuh)ffxiv_dx11_2023-12-21_00-02-35.pngffxiv_dx11_2023-12-14_00-03-32.webp", "E8S BLU CLEAR"]
+    ],
+    "partyList": [
+      ["BLU", "Alva Ortolani"],
+      ["BLU", "Takemoto Aka"],
+      ["BLU", "Akatsuki Scharlette"],
+      ["BLU", "Naki Schnee"],
+      ["BLU", "Matcha Neko"],
+      ["BLU", "Guagua Banana"],
+      ["BLU", "Show Bro"],
+      ["BLU", "Noko Wakase"]
+    ],
+    "contents": ["Gpose by Noko Wakase @ Ramuh"
+    ],
+    "urls": [
+      ["View Achievement", "https://eu.finalfantasyxiv.com/lodestone/playguide/db/achievement/46e2e873b1c/"],
+      ["View E4S Clear(Uploading)", ""],
+      ["View E12S Clear(Uploading)", ""],
+      ["查看心得(by Takemoto Aka @ Chocobo) ", "https://home.gamer.com.tw/creationDetail.php?sn=5827329"]
+    ]
+  }
+  

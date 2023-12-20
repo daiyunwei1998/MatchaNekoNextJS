@@ -2,7 +2,7 @@ import { NextRequest, NextResponse, userAgent } from 'next/server'
 
 // Set pathname where middleware will be executed
 export const config = {
-  matcher: ['/milestones','/about'],
+  matcher: ['/about'], //e.g. ['/milestones','/about'],
 }
 
 export function middleware(req) {

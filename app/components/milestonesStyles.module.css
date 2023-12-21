@@ -6,7 +6,7 @@
       display: none;
     }
     .milestoneCards {
-      width: 100%; /* Set the width to 100% for even larger screens */
+      width: 100% !important; 
     }
     
   }

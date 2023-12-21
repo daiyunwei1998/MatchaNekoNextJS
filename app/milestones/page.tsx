@@ -27,11 +27,11 @@ export default function Page() {
   return (
     <div>
         <Row>
-        <Col span={18}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <Timeline items={timelineItems} />     
         </Col>
 
-        <Col span={6}>
+        <Col offset = {6}>
           <Anchor 
             className={`${milestonesStyles.anchor} ${myFont.className}`}
             affix={false} 

@@ -2,6 +2,7 @@
     "id": "eureka-orthos-solo",
     "type":"DD",
     "title": "Once and Future Queen",
+    "size":"small",
     "description": "2023/9/3",
     "images": [
       ["/images/milestones/eo_score.webp", "Eureka Orthos Solo"]

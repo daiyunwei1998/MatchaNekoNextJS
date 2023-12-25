@@ -6,11 +6,8 @@
     "description": "2023/11/29 Patch 6.5",
     "images": [
       ["/images/gposes/Ultimates/TOP1.webp", "The Omega Protocol (Ultimate)"],
-      ["/images/gposes/Ultimates/TOP2.webp", "The Omega Protocol (Ultimate)"],
-      ["/images/gposes/Ultimates/TOP3.webp", "The Omega Protocol (Ultimate)"],
-      ["/images/gposes/Ultimates/back.webp", "The Omega Protocol (Ultimate)"],
-      ["/images/gposes/Ultimates/Star.webp", "The Omega Protocol (Ultimate)"],
-      ["/images/gposes/Ultimates/Ballsheep.webp", "The Omega Protocol (Ultimate)"]
+      ["/images/gposes/Ultimates/home_daiyunwei1998_bot-arvin_image.webp", "The Omega Protocol (Ultimate)"],
+      ["/images/gposes/Ultimates/ffxiv_dx11 2023-12-25 01-05-43.webp", "The Omega Protocol (Ultimate)"]
     ],
     "partyList": [
       ["WAR", "Swish Li"],
@@ -26,7 +23,8 @@
     ],
     "urls": [
       ["View FFlogs", "https://www.fflogs.com/character/id/17514901#zone=53&boss=1068"],
-      ["View First Clear PoV", "https://youtu.be/VEedtBzyKr0"]
+      ["View First Clear PoV", "https://youtu.be/VEedtBzyKr0"],
+      ["View Progress (by Ball Sheep @ Bahamut)", "/images/milestones/TOPTimeLine.jpg"]
     ]
   }
   

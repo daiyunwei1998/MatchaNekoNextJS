@@ -1,0 +1,17 @@
+{
+    "id": "mentor",
+    "type":"BattleMentor",
+    "size":"small",
+    "title": "Mentor",
+    "description": "2024/1/19 Patch 6.55",
+    "images": [
+      ["/images/milestones/mentor.webp", "Becoming a battle mentor!"]
+    ],
+    "partyList": [
+    ],
+    "contents": ["Player Commendation (1500/1500)"
+    ],
+    "urls": [
+    ]
+  }
+  

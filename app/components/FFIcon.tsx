@@ -55,6 +55,7 @@ const FFIcon = ({ type }:{type:string}) => {
     Sprout:'/images/fficon/Sprout.png',
     Returner:'/images/fficon/Returner.png',
     BlueMageDuty:'/images/fficon/BlueMageDuty.png',
+    BattleMentor:'/images/fficon/BattleMentor.png',
   };
 
   // Check if the provided "type" exists in the mapping

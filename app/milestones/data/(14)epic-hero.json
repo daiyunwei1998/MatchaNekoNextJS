@@ -1,0 +1,35 @@
+{
+    "id": "epic-hero",
+    "type":"HighEndDuty",
+    "size":"large",
+    "title": "Epic Hero",
+    "description": "",
+    "images": [
+      ["/images/milestones/epic hero/MountRokkon.webp", "MountRokkon"],
+      ["/images/milestones/epic hero/MountRokkon2.webp", "MountRokkon"],
+      ["/images/milestones/epic hero/MountRokkon3.webp", "MountRokkon"],
+      ["/images/milestones/epic hero/Aloalo Island.webp", "Aloalo Islandalt"],
+      ["/images/milestones/epic hero/Sil'dihn Subterrane.webp", "Sil'dihn Subterrane"]
+    ],
+    "partyList": [
+      ["SGE", "Vivy Amber @ Aegis"],
+      ["SAM", "Yonah Belzerg @ Typhon"],
+      ["MCH", "Una Guza @ Ifrit"],
+      ["SGE", "Litan Bellveil @ Aegis"],
+      ["SCH", "Ui Ha @ Typhon"],
+      ["SMN", "Shibusaka Yun @ Typhon"],
+      ["SAM", "OuO Acguy @ Bahamut"],
+      ["MCH", "Kenta Yano @ Bahamut"],
+      ["SCH", "Ball Sheep @ Bahamut"],
+      ["MCH", "Star Star @ Typhon"],
+      ["SMN", "Nakiri Eliya @ Bahamut"]
+    ],
+    "contents": [
+    ],
+    "urls": [
+      ["Sil'dihn Subterrane", "https://youtu.be/mj_QbhVfCD4"],
+      ["Mount Rokkon", "https://youtu.be/wvLQ8Op8-VU"], 
+      ["Aloalo Island", "https://youtu.be/wPm-ZIIwf9w"]
+    ]
+  }
+  

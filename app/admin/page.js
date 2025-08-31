@@ -40,7 +40,6 @@ async function fileToWebP(file, quality = 0.82) {
   return new File([blob], `${base}.webp`, { type: 'image/webp' })
 }
 
-// utility: small badge
 function Badge({ children }) {
   return (
     <span style={{ fontSize: 12, color: '#666', background: '#f2f2f2', padding: '2px 6px', borderRadius: 6 }}>
@@ -53,10 +52,11 @@ function Badge({ children }) {
 
 export default function Admin() {
   // upload form state
-  const [groupPath, setGroupPath] = useState('gposes')       // path-like grouping (e.g., "gposes/cats")
-  const [author, setAuthor] = useState('')                   // optional; server will default from Basic Auth username
-  const [labelsText, setLabelsText] = useState('')           // comma-separated labels
-  const [quality, setQuality] = useState(0.82)               // WebP quality 0..1
+  const [groupPath, setGroupPath] = useState('gposes') // path-like grouping
+  const [author, setAuthor] = useState('')             // optional; server can default from Basic Auth username
+  const [title, setTitle] = useState('')               // NEW: human-readable title
+  const [labelsText, setLabelsText] = useState('')     // comma-separated labels
+  const [quality, setQuality] = useState(0.82)         // WebP quality 0..1
   const [files, setFiles] = useState([])
   const fileInputRef = useRef(null)
 
@@ -103,7 +103,7 @@ export default function Admin() {
           body: JSON.stringify({
             filename: webpFile.name,
             contentType: ct,
-            folder: groupPath   // reuse as key prefix; server stores a separate "group" too
+            folder: groupPath   // key prefix; separate 'group' is stored server-side
           })
         })
         if (!presignRes.ok) {
@@ -116,16 +116,17 @@ export default function Admin() {
         const put = await fetch(uploadUrl, { method: 'PUT', body: webpFile, headers: { 'Content-Type': ct } })
         if (!put.ok) throw new Error(`PUT failed for ${webpFile.name}: ${put.status}`)
 
-        // 3) append metadata to index.json
+        // 3) append metadata to index.json (includes title)
         const addRes = await fetch('/api/admin/add-image', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             key,
             filename: webpFile.name,
-            author,               // optional; server will fallback to auth username
-            labels: labelsText,   // comma string or array; server normalizes to []
-            group: groupPath,     // path-like
+            title,               // << NEW
+            author,
+            labels: labelsText,  // comma string or array; server normalizes
+            group: groupPath,
             size: webpFile.size,
             contentType: ct
           })
@@ -138,6 +139,7 @@ export default function Admin() {
 
       setFiles([])
       setLabelsText('')
+      setTitle('')
       await refresh()
       alert('Upload complete (converted to WebP)')
     } catch (e) {
@@ -148,7 +150,6 @@ export default function Admin() {
     }
   }
 
-  // inline updates
   async function updateItem(key, fields) {
     try {
       const res = await fetch('/api/admin/update', {
@@ -180,12 +181,11 @@ export default function Admin() {
         const text = await res.text()
         throw new Error(`delete failed: ${res.status} ${text}`)
       }
-      // optional re-sync
       await refresh()
     } catch (e) {
       console.error(e)
       alert(e.message || 'Delete failed')
-      await refresh() // revert if server failed
+      await refresh()
     }
   }
 
@@ -208,6 +208,12 @@ export default function Admin() {
               style={{ width:'100%', padding:8, borderRadius:8, border:'1px solid #ccc' }} />
           </div>
           <div>
+            <label style={{ fontSize: 12, color: '#666' }}>Title</label>
+            <input value={title} onChange={e=>setTitle(e.target.value)}
+              placeholder="Human-readable title"
+              style={{ width:'100%', padding:8, borderRadius:8, border:'1px solid #ccc' }} />
+          </div>
+          <div style={{ gridColumn: '1 / -1' }}>
             <label style={{ fontSize: 12, color: '#666' }}>Labels (comma-separated)</label>
             <input value={labelsText} onChange={e=>setLabelsText(e.target.value)}
               placeholder="e.g. sunset, rooftop"
@@ -288,6 +294,7 @@ export default function Admin() {
 }
 
 function Card({ it, onUpdate, onDelete }) {
+  const [localTitle, setLocalTitle] = useState(it.title || '')
   const [localAuthor, setLocalAuthor] = useState(it.author || '')
   const [localLabels, setLocalLabels] = useState((it.labels || []).join(', '))
   const [localGroup, setLocalGroup] = useState(it.group || '')
@@ -311,6 +318,13 @@ function Card({ it, onUpdate, onDelete }) {
       </div>
 
       <div style={{ marginTop: 8, display: 'grid', gap: 6 }}>
+        <input
+          value={localTitle}
+          onChange={e => setLocalTitle(e.target.value)}
+          onBlur={() => localTitle !== (it.title || '') && onUpdate(it.key, { title: localTitle })}
+          placeholder="Title"
+          style={{ width: '100%', padding: 8, borderRadius: 8, border: '1px solid #ccc', fontSize: 14 }}
+        />
         <input
           value={localAuthor}
           onChange={e => setLocalAuthor(e.target.value)}

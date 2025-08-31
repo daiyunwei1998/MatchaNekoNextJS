@@ -24,6 +24,7 @@ export async function POST(req) {
   const entry = {
     key,
     filename,
+    title,   
     author,
     labels,
     uploadedAt: new Date().toISOString(),

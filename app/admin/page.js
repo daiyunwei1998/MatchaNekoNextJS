@@ -123,7 +123,7 @@ export default function Admin() {
           body: JSON.stringify({
             key,
             filename: webpFile.name,
-            title,               // << NEW
+            title,            
             author,
             labels: labelsText,  // comma string or array; server normalizes
             group: groupPath,

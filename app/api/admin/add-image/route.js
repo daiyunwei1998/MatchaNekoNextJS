@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { readManifest, writeManifest, withUrl } from '@/app/api/_manifest'
-import { normalizeLabels, normalizeGroup, getAuthorFromAuth } from '@/app/api/_meta' // or wherever you placed helpers
+import { normalizeLabels, normalizeGroup, getAuthorFromAuth } from '@/app/api/_manifest' 
 
 export async function POST(req) {
   const body = await req.json()
@@ -8,6 +8,7 @@ export async function POST(req) {
     key,
     filename,
     // accept either 'labels' (array) or 'label' (string) from older UI
+    title: titleIn,
     labels: labelsIn,
     label: labelIn,
     group: groupIn,
@@ -21,6 +22,11 @@ export async function POST(req) {
   const labels = normalizeLabels(labelsIn ?? labelIn)
   const group = normalizeGroup(groupIn ?? parentFolder)
 
+  const title =
+      (typeof titleIn === 'string' && titleIn.trim()) ||
+      (typeof nameIn === 'string' && nameIn.trim()) ||
+      String(filename)
+      
   const entry = {
     key,
     filename,

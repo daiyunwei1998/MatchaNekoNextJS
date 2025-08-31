@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-import { readManifest, writeManifest } from '@/app/api/_manifest'
-import { normalizeLabels, normalizeGroup } from '@/app/api/_meta'
+import { readManifest, writeManifest, normalizeLabels, normalizeGroup } from '@/app/api/_manifest'
 
 export async function POST(req) {
   const { key, title,  author, labels, label, group, parentFolder, description } = await req.json()
